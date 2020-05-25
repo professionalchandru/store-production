@@ -29,19 +29,6 @@ const cors                             = require('cors');
 const app                              = express();
 
 /**
- * redis server connection on
- * @returns connection status
- */
-client.on('connect', () => console.log('redis server is up...'));
-
-/**
- * View engine initialization
- */
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
-
-app.set('view engine', 'handlebars');
-
-/**
  * middlewares needed by this app
  */
 app.use(express.json());
